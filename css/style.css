@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* font-family: 'Raleway', sans-serif; */
+
+*{
+    margin: 0;
+    padding : 0;
+    font-family: 'Raleway', sans-serif;
+}
+html{
+    font-size: 10px;
+}
+
+.form-wrapper{
+    background:#dddddd;
+    padding: 3rem 3rem;
+    border-radius: 0.5rem;
+    width: 50rem;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.required-astarik{
+    color:red;
+    font-size: 2rem;
+}
+label{
+    width: 100%;
+    margin-bottom: 2.5rem;
+}
+label p{
+    color:#333333;
+    font-size: 1.6rem;
+}
+label input{
+    width:100%;
+    box-sizing: border-box;
+    outline:none;
+    border:none;
+    padding: 1rem 1.5rem;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    transition: 0.3s;
+    font-size: 1.6rem;
+}
+.form-title h2{
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 3rem;
+}
+
+/* input:invalid:not(input[type="submit"]){
+    border:1px solid red;
+} */
+input::placeholder{
+    color:#b1b1b1;
+    font-weight: 400;
+}
+input:focus:not(input[type="submit"]){
+    box-shadow: 0px 0px 6px #275bd1;
+}
+.btn-group.bootstrap-select.countrypicker.f16 {
+    width: 100%;
+    box-sizing: border-box;
+}
+span.filter-option.pull-left {
+    padding: 0.4rem !important;
+}
+
+button.btn.dropdown-toggle.btn-default {
+    outline: none !important;
+    padding: 0.6rm;
+
+}
+
+input[type='submit']{
+    background: #333;
+    color:#fff;
+    transition: 0.3s;
+}
+input[type='submit']:hover{
+    background: #ff5200;
+}
+
+.copyright{
+    text-align: right;
+    color:#4c9ce7;
+    user-select: none;
+}
+
+
+@media screen and (max-width:570px) {
+    .form-wrapper{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .form-wrapper{
+        width: 90%;
+    }
+    
+    .form-wrapper {
+    padding: 2rem 2rem;
+    }
+    
+    .form-title h2 {
+    font-size: 2.5rem;
+    }
+    label {
+        margin-bottom: 1.5rem;
+    }
+    label p {
+        font-size: 1.4rem;
+    }
+    label input {
+        padding: 0.7rem;
+        font-size: 1.4rem;
+    }
+    span.filter-option.pull-left {
+        padding: 0.2rem !important;
+    }
+}
